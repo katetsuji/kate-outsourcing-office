@@ -1,0 +1,242 @@
+body {
+  font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+body {
+  background-image: url(images/haikei.jpg)
+}
+
+
+/* 
+hamburger(ハンバーガーアイコン)
+=================================== */
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  right: 0;
+  background-color: #000;
+  transition: all 0.5s;
+}
+
+.hamburger__line--1 {
+  top: 1px;
+}
+
+.hamburger__line--2 {
+  top: 18px;
+}
+
+.hamburger__line--3 {
+  top: 36px;
+}
+
+/*ハンバーガーがクリックされたら*/
+.open .hamburger__line--1 {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+
+.open .hamburger__line--2 {
+  opacity: 0;
+}
+
+.open .hamburger__line--3 {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+/* 
+sp-nav(ナビ)
+=================================== */
+.sp-nav {
+  position: fixed;
+  right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+  top: 0;
+  width: 70%; /* 出てくるスライドメニューの幅 */
+  height: 100vh;
+  background-color: #fff;
+  transition: all 0.5s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+}
+
+/*ハンバーガーがクリックされたら右からスライド*/
+.open .sp-nav {
+  right: 0;
+}
+
+
+/* 
+black-bg(ハンバーガーメニュー解除用bg)
+=================================== */
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/*ハンバーガーメニューが開いたら表示*/
+.open .black-bg {
+  opacity: 0.3;
+  visibility: visible;
+}
+
+
+
+
+h1 {
+  color: white; font-weight: bold; font-size: 36px;
+  text-align: center; background-color: blue;
+}
+h2 {
+  color: white; font-weight: bold; font-size: 36px;
+  text-align: center; background-color: blue;
+}
+h3 {
+  font-size: 36px;
+} 
+
+
+.yellow-futo {
+  background: linear-gradient(transparent 65%, yellow 65%);
+}
+
+.kadomaru-box {
+  background-color: lightgrey; max-width: 300px;
+  text-align: center; border-radius: 5px;
+}
+
+.cv-contents {
+  max-width: 800px;
+  line-height: 36px;
+}
+
+.cv-contents figure { /* cv-contentsが指定されている中にあるfigureタグだけに効果を出す */
+  float: left; 
+  max-width: 350px;
+}
+
+.cv-contents blockquote { /* cv-contentsが指定されている中にあるblockquoteタグだけに効果を出す */
+  text-align: left;
+}
+
+.clearfix:after {
+  content: ""; 
+  display: block;
+  clear: both;
+}
+
+h9 {
+  background-color: blue; color: white; font-size: 20px;
+  text-align: center; border-radius: 5px;
+  text-decoration: none; max-width: 300px;
+  display:block;
+  animation: prunprun 2.2s ease-in infinite;
+  -webkit-animation: prunprun 2.2s ease-in infinite;
+  -moz-animation: prunprun 2.2s ease-in infinite;
+  -o-animation: prunprun 2.2s ease-in infinite;
+  -ms-animation: prunprun 2.2s ease-in infinite;
+}
+
+a {
+  background-color: white; color: black; font-size: 40px;
+  text-align: center; border-radius: 5px;
+  text-decoration: none; max-width: 300px;
+  display:block;
+  }
+
+a:hover {
+  background-color: darkblue; color: white;
+}
+a:active {
+  background-color: pink; color: white;
+}
+
+
+
+
+@keyframes prunprun {
+48%, 62% {transform: scale(1.0, 1.0);}
+50% {transform: scale(1.1, 0.9);}
+56% {transform: scale(0.9, 1.1) translate(0, -5px);}
+59% {transform: scale(1.0, 1.0) translate(0, -3px);}
+}
+
+@-webkit-keyframes prunprun{
+48%, 62% {-webkit-transform: scale(1.0, 1.0);}
+50% {-webkit-transform: scale(1.1, 0.9);}
+56% {-webkit-transform: scale(0.9, 1.1) translate(0, -5px);}
+59% {-webkit-transform: scale(1.0, 1.0) translate(0, -3px);}
+}
+
+  
+
+
+
+/
+}
+
+.company-overview {
+  border-top: 1px solid #ddd;
+}
+
+.company-overview .item {
+  padding: 24px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+  }
+
+
+
+ @media screen and (max-width:767px) {
+  body {font-size: 1.6vw;}
+
+  h1 {font-size: 3.6vw;}
+
+  a {font-size: 5.0vw;}
+
+  img {max-width: 100%;}
+
+ 
+  .cv-contents figure {
+    float: none;
+    max-width: 200px;
+
+
+
+
+}
+
+
+
+
+
+
+
+  }
+
+}
+
+
+
