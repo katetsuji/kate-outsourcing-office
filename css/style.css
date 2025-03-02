@@ -120,40 +120,54 @@ a:active {
 hamburger(ハンバーガーアイコン)
 =================================== */
 .hamburger {
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 20px;
-  width: 50px;
-  height: 40px;
+  width: 80px;
+  height: 60px;
+  
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  justify-conetent: center
+  align-items: center;
+
   cursor: pointer;
   z-index: 300;
 }
 
 .hamburger__line {
-  position: absolute;
+  position: fixed;
+ 
   width: 50px;
   height: 3px;
-  right: 0;
+  right: 35px;
+  
   background-color: #000;
+
+  justify-conetent: center
+  align-items: center;
+
+
   transition: all 0.5s;
 }
 
 .hamburger__line--1 {
-  top: 1px;
+  top: 31px;
 }
 
 .hamburger__line--2 {
-  top: 18px;
+  top: 48px;
 }
 
 .hamburger__line--3 {
-  top: 36px;
+  top: 66px;
 }
 
 /*ハンバーガーがクリックされたら*/
 .open .hamburger__line--1 {
   transform: rotate(-45deg);
-  top: 11px;
+  top: 41px;
 }
 
 .open .hamburger__line--2 {
@@ -162,8 +176,9 @@ hamburger(ハンバーガーアイコン)
 
 .open .hamburger__line--3 {
   transform: rotate(45deg);
-  top: 11px;
+  top: 41px;
 }
+
 
 /* 
 sp-nav(ナビ)
