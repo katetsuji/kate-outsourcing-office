@@ -10,40 +10,54 @@ body {
 hamburger(ハンバーガーアイコン)
 =================================== */
 .hamburger {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 50px;
-  height: 40px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  
+  background: aqua;
+  border-radius: 15px;
+  display: flex;
+  justify-conetent: center
+  align-items: center;
+
   cursor: pointer;
   z-index: 300;
 }
 
 .hamburger__line {
-  position: absolute;
+  position: fixed;
+ 
   width: 50px;
   height: 3px;
-  right: 0;
-  background-color: #000;
+  right: 15px;
+  
+  background-color: blue;
+
+  justify-conetent: center
+  align-items: center;
+
+
   transition: all 0.5s;
 }
 
 .hamburger__line--1 {
-  top: 1px;
+  top: 21px;
 }
 
 .hamburger__line--2 {
-  top: 18px;
+  top: 38px;
 }
 
 .hamburger__line--3 {
-  top: 36px;
+  top: 56px;
 }
 
 /*ハンバーガーがクリックされたら*/
 .open .hamburger__line--1 {
   transform: rotate(-45deg);
-  top: 11px;
+  top: 37px;
 }
 
 .open .hamburger__line--2 {
@@ -52,8 +66,9 @@ hamburger(ハンバーガーアイコン)
 
 .open .hamburger__line--3 {
   transform: rotate(45deg);
-  top: 11px;
+  top: 37px;
 }
+
 
 /* 
 sp-nav(ナビ)
