@@ -13,8 +13,8 @@ hamburger(ハンバーガーアイコン)
   position: fixed;
   right: 10px;
   top: 10px;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   
   background: aqua;
   border-radius: 15px;
@@ -29,9 +29,9 @@ hamburger(ハンバーガーアイコン)
 .hamburger__line {
   position: fixed;
  
-  width: 50px;
+  width: 30px;
   height: 3px;
-  right: 15px;
+  right: 18px;
   
   background-color: blue;
 
@@ -43,21 +43,21 @@ hamburger(ハンバーガーアイコン)
 }
 
 .hamburger__line--1 {
-  top: 21px;
+  top: 19px;
 }
 
 .hamburger__line--2 {
-  top: 38px;
+  top: 31px;
 }
 
 .hamburger__line--3 {
-  top: 56px;
+  top: 43px;
 }
 
 /*ハンバーガーがクリックされたら*/
 .open .hamburger__line--1 {
   transform: rotate(-45deg);
-  top: 37px;
+  top: 31px;
 }
 
 .open .hamburger__line--2 {
@@ -66,7 +66,7 @@ hamburger(ハンバーガーアイコン)
 
 .open .hamburger__line--3 {
   transform: rotate(45deg);
-  top: 37px;
+  top: 31px;
 }
 
 
