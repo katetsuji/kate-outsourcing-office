@@ -224,19 +224,28 @@ a:active {
 
 
 
- @media screen and (max-width:767px) {
-  body {font-size: 1.6vw;}
+ }
 
-  h1 {font-size: 3.6vw;}
 
-  a {font-size: 5.0vw;}
+
+ @media screen and (max-width:600px) {
+  body {font-size: 3.6vw;}
+
+  h1 {font-size: 5.0vw;}
+
+  h2 {font-size: 5.0vw;}
+
+  h3 {font-size: 5.0vw;}
+
+
+  a {font-size: 3.6vw;}
 
   img {max-width: 100%;}
 
- 
   .cv-contents figure {
     float: none;
     max-width: 200px;
+  }
 
 
 
